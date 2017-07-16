@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 14, 2014, 6:55:29 PM
+    Author     : Kiran
+*/
+
+
+
+.slideConainer{
+    position: relative; margin: 0 auto;
+    top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; float: left;
+
+    .loading{
+        position: absolute; top: 0px; left: 0px;
+    }
+
+    .slide{
+        cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+        height: 580px; overflow: hidden;
+    }
+
+    .cap-head{
+        position: absolute; width: 580px; height: 120px; top: 140px; left: 200px; padding: 5px;
+        text-align: left;  
+        color: #FFFFFF; 
+        @include font(300,35,45,$fontJa);
+        &.black{
+            color: #000;
+        }
+    }
+    
+     .cap-head2{
+        position: absolute; width: 600px; height: 120px; top: 200px; left: 250px; padding: 5px;
+        text-align: left; 
+        color: #FFFFFF;
+         @include font(300,22,30,$fontJa);
+         &.black{
+            color: #000;
+        }
+    }
+    
+    
+
+}
+
+
+.jssorb21{ 
+position: absolute; right:  50px; top:50%;
+}
+ .jssorb21 div,
+        .jssorb21 div:hover,
+        .jssorb21 .av {
+            background: url("#{$imagePath}/b21.png") no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb21 div {
+            background-position: -5px -5px;
+        }
+        .jssorb21 div:hover,
+        .jssorb21 .av:hover {
+            background-position: -35px -5px;
+        }
+        .jssorb21 .av {
+            background-position: -65px -5px;
+        }
+        .jssorb21 .dn,
+        .jssorb21 .dn:hover {
+            background-position: -95px -5px;
+        }
+        
+        #bullat{
+            position:  absolute; width: 27px; height:  22px; text-align:center; line-height:19px; color:White; font-size:12px;
+        }

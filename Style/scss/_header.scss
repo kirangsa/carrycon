@@ -1,0 +1,60 @@
+.header{   
+     background: #eeea37;
+     @include box-shadow(0 0 18px 0 rgba(0,0,0,0.7));
+     width: 100%;
+     position: relative;
+     z-index: 9;
+    .head{
+
+        @include center;
+
+         .menu{
+     
+          @include col(5/12);
+        
+                         li{
+                             @include col(1/2);
+                             display: inline;
+                             list-style: none;
+                             text-align: center;
+                            
+                             a{
+                              font:21px $fontJa;                             
+                              color: #000;
+                              text-decoration: none;
+                               padding-top: 39px;
+                               padding-bottom: 25px;
+                               display: block;
+                               border-bottom: 6px solid transparent;
+                              @include transition-duration(1s);
+                              @include transition-timing-function(ease-in);
+                              &:hover{
+                               border-color: $blue;
+                              }
+                              &.selected{
+                                border-color: $blue;
+                              }
+
+                             }
+                         }      
+       }
+    .logo{
+       
+        @include col(2/12);
+        position: relative;
+        min-height: 30px;
+
+        img{
+         position: absolute;
+         top:0;
+         border: 1px solid #333;
+         border-top: none;
+         max-width: 100%;
+        }
+       
+    }
+    }
+    
+   
+    
+}

@@ -1,0 +1,62 @@
+@mixin respond($media) {
+  @if $media == mobile {
+    @media only screen and (max-width:$tab) {
+      @content;
+    }
+  }
+  @else if $media == smallmobile {
+    @media only screen and (max-width:400px) {
+      @content;
+    }
+  }
+  @else if $media == tab {
+    @media only screen and (min-width:$tab) and (max-width:992px) {
+      @content;
+    }
+  }
+  @else if $media == desk {
+    @media only screen and (min-width:992px) and (max-width:1200px) {
+      @content;
+    }
+  }
+  @else if $media==tv {
+    @media only screen and (min-width:1200px) {
+      @content;
+    }
+  }
+}
+
+
+@mixin screen($resMin, $resMax) {
+  @media screen and (min-width:$resMin) and (max-width:$resMax) {
+    @content;
+  }
+}
+@mixin max-screen($res) {
+  @media screen and (max-width:$res) {
+    @content;
+  }
+}
+@mixin min-screen($res) {
+  @media screen and (min-width:$res) {
+    @content;
+  }
+}
+
+
+/*Mixin For Font*/
+
+@mixin font($fontW,$fontS, $lineH, $font){ 
+    font-weight: $fontW;
+    font-size: ($fontS )+px;
+    font-size: remCal($fontS);
+    font-family: $font;
+    line-height: ($lineH)+px;
+    line-height: remCal($lineH);
+    
+}
+
+@function remCal($size){    
+    $remSize: $size/$baseFontSize;
+    @return #{$remSize}rem;    
+}

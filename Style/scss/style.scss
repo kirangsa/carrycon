@@ -1,0 +1,43 @@
+
+/* Created on: May 21, 2014, 1:25:06 PM
+Author:Kiran */
+@import "libs/_normalize.scss";
+@import "libs/jeet/_jeet.scss";
+@import "libs/_selection.scss";
+
+$imagePath: "../../images";
+@import "compass";
+@import "base";
+@import "typography";
+@import "mixin";
+@import "libs/_utls.scss";
+
+$sagibold: 'saginaw_bold';
+
+
+html,body{
+	@include transition(all .5s linear);    
+}
+@import "topmenu";
+@import "header";
+@import "_banner.scss";
+
+@import "_HomeContent.scss";
+@import "_footer.scss";
+
+@import "inner";
+
+
+@import "_slider.scss";
+@import "_animation.scss";
+
+/*Page Styles*/
+@import "pages/_about.scss";
+@import "pages/_hr.scss";
+
+
+
+
+
+
+

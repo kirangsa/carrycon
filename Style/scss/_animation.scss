@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 16, 2014, 1:42:18 PM
+    Author     : Kiran
+*/
+
+@-webkit-keyframes shakey-nav {
+  0% {
+    -webkit-transform: rotate(0deg)
+  }
+  20% {
+    -webkit-transform: rotate(5deg)
+  }
+  60% {
+    -webkit-transform: rotate(-8deg)
+  }
+  100% {
+    -webkit-transform: rotate(0deg)
+  }
+}
+@-moz-keyframes shakey-nav {
+  0% {
+    -moz-transform: rotate(0deg)
+  }
+  20% {
+    -moz-transform: rotate(5deg)
+  }
+  60% {
+    -moz-transform: rotate(-8deg)
+  }
+  100% {
+    -moz-transform: rotate(0deg)
+  }
+}
+@keyframes shakey-nav {
+  0% {
+    transform: rotate(0deg)
+  }
+  20% {
+    transform: rotate(5deg)
+  }
+  60% {
+    transform: rotate(-8deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}

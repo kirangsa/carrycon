@@ -1,0 +1,95 @@
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: #585858;
+    text-align:center;
+    font:13px $fonttr;
+    color: $white;
+    float: left;
+    @include cf();
+    color: #000;
+.footer{
+
+   @include center();
+
+
+    .logo{
+        @include col(3/12);
+        -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+
+        @include respond(mobile){
+                display: none;
+            }
+      img{
+        float: left;
+      }
+
+    }
+
+    .icon{
+         @include col(3/12);
+         li{
+            padding: 5px 0;
+
+            @include respond(mobile){
+                display: inline-block;               
+            }
+         }
+         @include respond(mobile){
+                  @include col(12/12);              
+            }
+    }
+    .links{
+        @include col(3/12);
+        text-align: left;
+        li{
+            a{
+                color: #000;
+                padding: 5px 0;
+                display: block;
+                text-decoration: none;
+            }
+        }
+         @include respond(mobile){
+               @include col(6/12);            
+            }
+
+    }
+    .address{
+     @include col(3/12);
+     text-align: left;
+      @include respond(mobile){
+               @include col(6/12);            
+            }
+    }
+
+}
+}
+
+.copyRights{
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    background: #434242;
+    text-align:center;
+    font:13px $fonttr;
+    color: $white;
+    float: left;
+    @include cf();
+    color: #000;
+
+    .copyRights-center{
+      @include center();
+
+      p{
+        text-align: right;
+        color: #000;
+        padding: 0;
+      }
+    }
+}
